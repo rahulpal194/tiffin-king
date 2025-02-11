@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../fonts/typography/rubik/Rubik.css">
     <link rel="stylesheet" href="../../fonts/iconly/iconly.css">
+    <link rel="stylesheet" href="../../lib/swiper/swiper-bundle.min.css">
+
+    <script src="../../js/script.js"></script>
+
     <title>Home :: Tiffin King</title>
 </head>
-<body class="bg-herobg bg-no-repeat">
-
+<body>
     <!--====================================
                 HEADER PART START  
     =====================================-->
@@ -23,7 +26,13 @@
                 <li class="hover:text-primary"><a href="">Contact Us</a></li>
             </ul>
             <div class="flex gap-3 items-center">
-                <button class="flex items-center gap-1 font-normal text-xs border px-2 h-8 rounded-full text-black bg-white"><img class="w-4 h-4 rounded-full" src="../../images/flag/united kingdom.png" alt="flag">English</button>
+                <div class="relative dropdown-group group">
+                    <button id="dropdown-btn" class="dropdown-btn flex items-center gap-1 font-normal text-xs border px-2 h-8 rounded-full text-black bg-white"><img class="w-4 h-4 rounded-full" src="../../images/flag/united kingdom.png" alt="flag">English</button>
+                    <ul class="dropdown-list absolute top-9 w-full p-2 bg-white shadow-md rounded-lg scale-y-0 group-hover:scale-y-100 origin-top transition-all duration-300">
+                        <li class="px-2 pb-2">English</li>
+                        <li class="px-2">Bangla</li>
+                    </ul>
+                </div>
                 <button class="hidden lg:flex items-center gap-1 font-medium text-sm bg-black/100 px-3 h-8 rounded-full text-white"><i class="icon-cart text-lg"></i>$0.00</button>
                 <button class="hidden lg:flex items-center gap-1 font-medium text-sm bg-primary px-3 h-8 rounded-full text-white"><i class="icon-profile-circle"></i>Log In</button>
             </div>
@@ -33,28 +42,91 @@
                 HEADER PART START  
     =====================================-->
 
-
     <!--====================================
-                HEADER PART START  
+                HERO PART START  
     =====================================-->
-    <section class="container mt-12 md:mt-14">
-        <div class="row items-center justify-between">
-            <div class="col-12 md:col-6">
-                <h1 class="text-[44px] font-semibold leading-tight mb-6 text-center md:text-start">Exceptional Catering for Everyday – <span class="text-primary">Fresh, Flavorful, & Memorable!</span></h1>
-                <p class="text-base font-normal text-center md:text-start mb-8">Say goodbye to meal planning and cooking—our daily catering service ensures you enjoy fresh, delicious meals without the hassle.</p>
-                <button class="bg-primary text-white text-lg font-medium ps-6 p-2 mx-auto md:mx-0 rounded-full flex items-center gap-6">Order Now <span class="w-9 h-9 rounded-full flex items-center justify-center bg-white"><i class="icon-arrow-upright text-xl text-primary"></i></span></button>
-            </div>
-            <div class="col-12 md:col-6">
-                <div class="flex justify-center lg:justify-end">
-                    <div class="max-w-[479px]">
-                        <img class="w-full" src="../../images/banner/hero_banner.png" alt="hero banner">
+    <section class="container">
+        <div class="mt-12 md:mt-14 mb-20">
+            <div class="row items-center justify-between gap-y-2">
+                <div class="col-12 md:col-6">
+                    <h1 class="text-2xl sm:text-[44px] font-semibold leading-tight mb-3 sm:mb-6 text-center md:text-start">Exceptional Catering for Everyday – <span class="text-primary">Fresh, Flavorful, & Memorable!</span></h1>
+                    <p class="text-base font-normal text-center md:text-start mb-4 sm:mb-8">Say goodbye to meal planning and cooking—our daily catering service ensures you enjoy fresh, delicious meals without the hassle.</p>
+                    <button class="bg-primary text-white text-lg font-medium pl-6 py-1.5 sm:py-2 px-2 mx-auto md:mx-0 rounded-full flex items-center gap-6">Order Now <span class="w-8 sm:w-9 h-8 sm:h-9 rounded-full flex items-center justify-center bg-white"><i class="icon-arrow-upright text-xl text-primary"></i></span></button>
+                </div>
+                <div class="col-12 md:col-6">
+                    <div class="flex justify-center lg:justify-end">
+                        <div class="max-w-[479px]">
+                            <img class="w-full" src="../../images/banner/hero_banner.png" alt="hero banner">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--====================================
-                HEADER PART START  
+                HERO PART END  
     =====================================-->
+
+    <!--====================================
+          WHAT WE SERVE PART START  
+    =====================================-->
+    <section class="container">
+        <h2 class="text-center font-semibold text-[32px] mb-4">What We<span class="text-primary"> Serve </span>You</h2>
+        <p class="text-base font-normal text-center mb-6">From Our Kitchen to Your Table – Pure Culinary Excellence</p>
+
+        <section class="container">
+            <div class="swiper brandSwiper md:mb-10 mb-8 lg:mb-20">
+                <div class="flex justify-between mb-6 md:mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold">
+                        <i class="lab-fill-medal-ribbons text-primary text-2xl md:text-3xl"></i> Top Brands
+                    </h3>
+                    <div class="flex gap-3">
+                        <button class="button-prev w-9 h-9 rounded-full flex justify-center items-center text-primary bg-[#F3F5FF] hover:bg-primary hover:text-white transition-all duration-300">
+                            <i class="lab-line-chevron-left text-xl"></i>
+                        </button>
+                        <button class="button-next w-9 h-9 rounded-full flex justify-center items-center text-primary bg-[#F3F5FF] hover:bg-primary hover:text-white transition-all duration-300">
+                            <i class="lab-line-chevron-right text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex ltr:gap-4 ltr:sm:gap-6 rtl:gap-0 flex-nowrap swiper-wrapper">
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/breakfast.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/brunch.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/dinner.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/lunch.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/snacks.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/breakfast.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/brunch.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/dinner.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/lunch.png" alt="">
+                    </div>
+                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
+                        <img src="../../images/meal/snacks.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--====================================
+          WHAT WE SERVE PART START  
+    =====================================-->
+
 </body>
 </html>
