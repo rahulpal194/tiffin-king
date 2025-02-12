@@ -5,6 +5,7 @@
 @layer base {
     :root {
         --primary: 207 0 6;
+        --primary-light : 255 237 238;
         --client-font: 'Rubik', sans-serif;
         --black: 31 31 57;
     }
@@ -27,4 +28,61 @@
     .col-10 { @apply w-4/5 p-3 }
     .col-11 { @apply w-5/6 p-3 }
     .col-12 { @apply w-full p-3 } 
+
+    .masonry {
+        grid-template-rows: repeat(auto-fit, minmax(0, 5px));
+        grid-template-columns: repeat(12,minmax(13px, 1fr));
+        column-gap: 24px;
+    }
+    .item1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end:8;
+        display: grid;
+        margin-bottom: 24px;}
+    .item2{
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end:9;
+        display: grid;
+        margin-bottom: 24px;
+    }
+    .item3{
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end:10;
+        display: grid;
+        margin-bottom: 24px;
+    }
+    .item4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end:18;
+        display: grid;
+        margin-bottom: 24px;
+    }
+    .item5{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 10;
+        grid-row-end:17;
+        display: grid;
+        margin-bottom: 24px;
+    }
+    .item6{
+        grid-column-start: 9;
+        grid-column-end: 13;
+        grid-row-start: 10;
+        grid-row-end:17;
+        display: grid;
+        margin-bottom: 24px;
+    }
+    .item:hover {
+        transform: translateY(-10px);
+    }
+
 }

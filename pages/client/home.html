@@ -6,9 +6,14 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../fonts/typography/rubik/Rubik.css">
     <link rel="stylesheet" href="../../fonts/iconly/iconly.css">
-    <link rel="stylesheet" href="../../lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../lib/swiper/bundle.min.css">
 
-    <script src="../../js/script.js"></script>
+    <!-- <script defer src="../../lib/jquery-v3.2.1.min.js"></script> -->
+    <script defer src="../../lib/swiper/bundle.min.js"></script>
+    <script defer src="../../lib/swiper/initialize.js"></script>
+    
+    <script defer src="../../js/script.js"></script>
+    <script defer src="../../js/dropdown.js"></script>
 
     <title>Home :: Tiffin King</title>
 </head>
@@ -73,60 +78,120 @@
     <section class="container">
         <h2 class="text-center font-semibold text-[32px] mb-4">What We<span class="text-primary"> Serve </span>You</h2>
         <p class="text-base font-normal text-center mb-6">From Our Kitchen to Your Table – Pure Culinary Excellence</p>
-
-        <section class="container">
-            <div class="swiper brandSwiper md:mb-10 mb-8 lg:mb-20">
-                <div class="flex justify-between mb-6 md:mb-8">
-                    <h3 class="text-2xl md:text-3xl font-bold">
-                        <i class="lab-fill-medal-ribbons text-primary text-2xl md:text-3xl"></i> Top Brands
-                    </h3>
-                    <div class="flex gap-3">
-                        <button class="button-prev w-9 h-9 rounded-full flex justify-center items-center text-primary bg-[#F3F5FF] hover:bg-primary hover:text-white transition-all duration-300">
-                            <i class="lab-line-chevron-left text-xl"></i>
-                        </button>
-                        <button class="button-next w-9 h-9 rounded-full flex justify-center items-center text-primary bg-[#F3F5FF] hover:bg-primary hover:text-white transition-all duration-300">
-                            <i class="lab-line-chevron-right text-xl"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="flex ltr:gap-4 ltr:sm:gap-6 rtl:gap-0 flex-nowrap swiper-wrapper">
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/breakfast.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/brunch.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/dinner.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/lunch.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/snacks.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/breakfast.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/brunch.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/dinner.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/lunch.png" alt="">
-                    </div>
-                    <div class="swiper-slide border border-light-white rounded-xl flex justify-center items-center h-24">
-                        <img src="../../images/meal/snacks.png" alt="">
-                    </div>
-                </div>
+        <div class="swiper category-swiper">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-[100px] drop-shadow-category" src="../../images/category/breakfast.png" alt="category">
+                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Breakfast</h3>
+                </a>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-[100px] drop-shadow-category" src="../../images/category/brunch.png" alt="category">
+                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Brunch</h3>
+                </a>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-[100px] drop-shadow-category" src="../../images/category/lunch.png" alt="category">
+                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Lunch</h3>
+                </a>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-[100px] drop-shadow-category" src="../../images/category/snacks.png" alt="category">
+                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Snacks</h3>
+                </a>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-[100px] drop-shadow-category" src="../../images/category/dinner.png" alt="category">
+                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Dinner</h3>
+                </a>
             </div>
-        </section>
+        </div>
     </section>
     <!--====================================
           WHAT WE SERVE PART START  
     =====================================-->
+
+
+    <!--====================================
+          WHAT WE SERVE PART START  
+    =====================================-->
+    <section class="container">
+        <div class="mt-12 md:mt-14 mb-20">
+            <div class="row items-center justify-between gap-y-2">
+                <div class="col-12 md:col-6">
+                    <div class="flex justify-center lg:justify-start">
+                        <div class="max-w-[479px]">
+                            <img class="w-full" src="../../images/about.png" alt="about banner">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-6">
+                    <span class="text-primary text-[22px] font-medium">About Us</span>
+                    <h1 class="text-2xl sm:text-[44px] font-semibold leading-tight mb-3 sm:mb-6 text-center md:text-start">Passionately Catering, Perfecting Every Bite</h1>
+                    <p class="text-base font-normal text-center md:text-start mb-4 sm:mb-8">At TiffinKing, we bring people together with exceptional food and service. Using fresh ingredients and expert craftsmanship, we create memorable dining experiences for any occasion. Whether it’s daily corporate meals or grand celebrations, we cater with passion and precision.</p>
+                    <button class="bg-primary text-white text-lg font-medium pl-6 py-1.5 sm:py-2 px-2 mx-auto md:mx-0 rounded-full flex items-center gap-6">Read More <span class="w-8 sm:w-9 h-8 sm:h-9 rounded-full flex items-center justify-center bg-white"><i class="icon-arrow-upright text-xl text-primary"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+           WHAT WE SERVE PART START  
+    =====================================-->
+
+    <!--====================================
+            FEATURES PART START  
+    =====================================-->
+    <section class="container mb-20 py-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            <div class="flex flex-col justify-center items-center text-center">
+                <img class="mb-6" src="../../images/features/Landscape.png" alt="">
+                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                <p>We have various regional-style food categories</p>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <img class="mb-6" src="../../images/features/Office Staff.png" alt="">
+                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                <p>We have various regional-style food categories</p>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <img class="mb-6" src="../../images/features/Coconut Oil.png" alt="">
+                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                <p>We have various regional-style food categories</p>
+            </div>
+            <div class="flex flex-col justify-center items-center text-center">
+                <img class="mb-6" src="../../images/features/Thumbs Up.png" alt="">
+                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                <p>We have various regional-style food categories</p>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+             FEATURES PART START  
+    =====================================-->
+
+    <!--====================================
+             FEATURES PART START  
+    =====================================-->
+    <div class="masonry container block sm:grid mb-20">
+        <div class="item item1 transition-all duration-300 order-1">
+            <img class="w-full h-full" src="../../images/gallery/Kung Pao Squid.png" alt="">
+        </div>
+        <div class="item item2 transition-all duration-300 order-2">
+            <img class="w-full h-full" src="../../images/gallery/Poached Pear Salad.png" alt="">
+        </div>
+        <div class="item item3 transition-all duration-300 order-3">
+            <img class="w-full h-full" src="../../images/gallery/Beef with Brocolli.png" alt="">
+        </div>
+        <div class="item item4 transition-all duration-300 order-4">
+            <img class="w-full h-full" src="../../images/gallery/Beef with Mix Vegetables.png" alt="">
+        </div>
+        <div class="item item5 transition-all duration-300 order-5">
+            <img class="w-full h-full" src="../../images/gallery/Roasted Salmon Salad.png" alt="">
+        </div>
+        <div class="item item6 transition-all duration-300 order-6">
+            <img class="w-full h-full" src="../../images/gallery/Szechuan Beef.png" alt="">
+        </div>
+    </div>
+    <!--====================================
+             FEATURES PART START  
+    =====================================-->
+
 
 </body>
 </html>
