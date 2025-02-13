@@ -3,6 +3,9 @@
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      screens:{
+
+      },
       fontFamily: {
         "client": ["var(--client-font)"],
     },
@@ -16,8 +19,8 @@
     },
     dropShadow: {
       "category": "2px 4px 8px rgba(0, 0, 0, 0.25)",
+      "mobile-nav":"0px 4px 32px rgba(0, 0, 0, 0.06)",
   }
-
     },
   },
   plugins: [],

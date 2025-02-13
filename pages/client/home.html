@@ -21,7 +21,7 @@
     <!--====================================
                 HEADER PART START  
     =====================================-->
-    <header>
+    <header class="fixed top-0 bg-transparent left-0 w-full">
         <nav class="container flex justify-between items-center py-4 md:py-5">
             <a href="#"><img src="../../images/tiffinKing_logo.png" alt="logo"></a>
             <ul class="hidden lg:flex gap-8 items-center text-sm font-medium">
@@ -50,8 +50,8 @@
     <!--====================================
                 HERO PART START  
     =====================================-->
-    <section class="container">
-        <div class="mt-12 md:mt-14 mb-20">
+    <section class="bg-herobg pt-32">
+        <div class="container  mb-16 sm:mb-20">
             <div class="row items-center justify-between gap-y-2">
                 <div class="col-12 md:col-6">
                     <h1 class="text-2xl sm:text-[44px] font-semibold leading-tight mb-3 sm:mb-6 text-center md:text-start">Exceptional Catering for Everyday – <span class="text-primary">Fresh, Flavorful, & Memorable!</span></h1>
@@ -73,47 +73,59 @@
     =====================================-->
 
     <!--====================================
+           SIDEBAR CART PART START  
+    =====================================-->
+    <!-- <aside class="w-full h-screen bg-black/60 fixed top-0 z-20 visible">
+        <div class="max-w-xl w-full h-screen z-30 bg-white right-0 absolute">
+            <h1>hello Sidebar</h1>
+        </div>
+    </aside> -->
+    <!--====================================
+           SIDEBAR CART PART START  
+    =====================================-->
+
+    <!--====================================
           WHAT WE SERVE PART START  
     =====================================-->
-    <section class="container">
-        <h2 class="text-center font-semibold text-[32px] mb-4">What We<span class="text-primary"> Serve </span>You</h2>
-        <p class="text-base font-normal text-center mb-6">From Our Kitchen to Your Table – Pure Culinary Excellence</p>
+    <section class="container mb-16 sm:20">
+        <h2 class="text-center font-semibold text-[22px] sm:text-[32px] mb-2 sm:mb-4">What We<span class="text-primary"> Serve </span>You</h2>
+        <p class="text-sm sm:text-base font-normal text-center mb-2.5 sm:mb-6">From Our Kitchen to Your Table – Pure Culinary Excellence</p>
         <div class="swiper category-swiper">
             <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
-                    <img class="h-[100px] drop-shadow-category" src="../../images/category/breakfast.png" alt="category">
-                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Breakfast</h3>
+                <a href="#" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-9 sm:h-[100px] drop-shadow-category" src="../../images/category/breakfast.png" alt="category">
+                    <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Breakfast</h3>
                 </a>
-                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
-                    <img class="h-[100px] drop-shadow-category" src="../../images/category/brunch.png" alt="category">
-                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Brunch</h3>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-9 sm:h-[100px] drop-shadow-category" src="../../images/category/brunch.png" alt="category">
+                    <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Brunch</h3>
                 </a>
-                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
-                    <img class="h-[100px] drop-shadow-category" src="../../images/category/lunch.png" alt="category">
-                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Lunch</h3>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-9 sm:h-[100px] drop-shadow-category" src="../../images/category/lunch.png" alt="category">
+                    <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Lunch</h3>
                 </a>
-                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
-                    <img class="h-[100px] drop-shadow-category" src="../../images/category/snacks.png" alt="category">
-                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Snacks</h3>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-y-3 sm:gap-6 p-3 sm:p-6 pb-2 sm:pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-9 sm:h-[100px] drop-shadow-category" src="../../images/category/snacks.png" alt="category">
+                    <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Snacks</h3>
                 </a>
-                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-6 p-6 pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
-                    <img class="h-[100px] drop-shadow-category" src="../../images/category/dinner.png" alt="category">
-                    <h3 class="text-[22px] font-semibold group-hover:text-primary">Dinner</h3>
+                <a href="#" class="swiper-slide !flex flex-col items-center text-center gap-y-3 sm:gap-6 p-3 sm:p-6 pb-2 sm:pb-4 rounded-2xl border-b-2 border-transparent transition group hover:bg-primary-light bg-[#F7F7FC]">
+                    <img class="h-9 sm:h-[100px] drop-shadow-category" src="../../images/category/dinner.png" alt="category">
+                    <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Dinner</h3>
                 </a>
             </div>
         </div>
     </section>
     <!--====================================
-          WHAT WE SERVE PART START  
+          WHAT WE SERVE PART END  
     =====================================-->
 
 
     <!--====================================
-          WHAT WE SERVE PART START  
+          ABOUT US PART START  
     =====================================-->
     <section class="container">
-        <div class="mt-12 md:mt-14 mb-20">
-            <div class="row items-center justify-between gap-y-2">
+        <div class="mt-12 md:mt-14 mb-12 sm:mb-20">
+            <div class="row items-center justify-between sm:flex-row flex-col-reverse">
                 <div class="col-12 md:col-6">
                     <div class="flex justify-center lg:justify-start">
                         <div class="max-w-[479px]">
@@ -122,8 +134,8 @@
                     </div>
                 </div>
                 <div class="col-12 md:col-6">
-                    <span class="text-primary text-[22px] font-medium">About Us</span>
-                    <h1 class="text-2xl sm:text-[44px] font-semibold leading-tight mb-3 sm:mb-6 text-center md:text-start">Passionately Catering, Perfecting Every Bite</h1>
+                    <h6 class="text-primary text-base sm:text-[22px] font-semibold sm:font-medium sm:text-left text-center mb-1 sm:mb-2">About Us</h6>
+                    <h1 class="text-2xl sm:text-[44px] font-semibold leading-8 sm:leading-tight mb-3 sm:mb-6 text-center md:text-start ">Passionately Catering, Perfecting Every Bite</h1>
                     <p class="text-base font-normal text-center md:text-start mb-4 sm:mb-8">At TiffinKing, we bring people together with exceptional food and service. Using fresh ingredients and expert craftsmanship, we create memorable dining experiences for any occasion. Whether it’s daily corporate meals or grand celebrations, we cater with passion and precision.</p>
                     <button class="bg-primary text-white text-lg font-medium pl-6 py-1.5 sm:py-2 px-2 mx-auto md:mx-0 rounded-full flex items-center gap-6">Read More <span class="w-8 sm:w-9 h-8 sm:h-9 rounded-full flex items-center justify-center bg-white"><i class="icon-arrow-upright text-xl text-primary"></i></span></button>
                 </div>
@@ -131,67 +143,243 @@
         </div>
     </section>
     <!--====================================
-           WHAT WE SERVE PART START  
+         ABOUT US PART END 
     =====================================-->
 
     <!--====================================
             FEATURES PART START  
     =====================================-->
-    <section class="container mb-20 py-20">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
-            <div class="flex flex-col justify-center items-center text-center">
-                <img class="mb-6" src="../../images/features/Landscape.png" alt="">
-                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
-                <p>We have various regional-style food categories</p>
-            </div>
-            <div class="flex flex-col justify-center items-center text-center">
-                <img class="mb-6" src="../../images/features/Office Staff.png" alt="">
-                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
-                <p>We have various regional-style food categories</p>
-            </div>
-            <div class="flex flex-col justify-center items-center text-center">
-                <img class="mb-6" src="../../images/features/Coconut Oil.png" alt="">
-                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
-                <p>We have various regional-style food categories</p>
-            </div>
-            <div class="flex flex-col justify-center items-center text-center">
-                <img class="mb-6" src="../../images/features/Thumbs Up.png" alt="">
-                <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
-                <p>We have various regional-style food categories</p>
+    <section class="container">
+        <div class="mb-20 py-20">
+            <h2 class="text-center font-semibold text-[22px] sm:text-[32px] mb-2 sm:mb-4">What We<span class="text-primary"> Serve </span>You</h2>
+            <p class="text-sm sm:text-base font-normal text-center mb-2.5 sm:mb-6">From Our Kitchen to Your Table – Pure Culinary Excellence</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img class="mb-6" src="../../images/features/Landscape.png" alt="">
+                    <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                    <p>We have various regional-style food categories</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img class="mb-6" src="../../images/features/Office Staff.png" alt="">
+                    <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                    <p>We have various regional-style food categories</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img class="mb-6" src="../../images/features/Coconut Oil.png" alt="">
+                    <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                    <p>We have various regional-style food categories</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <img class="mb-6" src="../../images/features/Thumbs Up.png" alt="">
+                    <h3 class="text-lg font-semibold mb-2">Various Region Based</h3>
+                    <p>We have various regional-style food categories</p>
+                </div>
             </div>
         </div>
     </section>
     <!--====================================
-             FEATURES PART START  
+             FEATURES PART END  
     =====================================-->
 
     <!--====================================
-             FEATURES PART START  
+            IMAGE GALLERY PART START  
     =====================================-->
-    <div class="masonry container block sm:grid mb-20">
-        <div class="item item1 transition-all duration-300 order-1">
-            <img class="w-full h-full" src="../../images/gallery/Kung Pao Squid.png" alt="">
+    <!-- <section class="container mb-20">
+        <h2 class="text-[32px] font-semibold text-center mb-12">Image Gallery</h2>
+        <div class="masonry grid">
+            <div class="item item1 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Kung Pao Squid.png" alt="">
+            </div>
+            <div class="item item2 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Poached Pear Salad.png" alt="">
+            </div>
+            <div class="item item3 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Beef with Brocolli.png" alt="">
+            </div>
+            <div class="item item4 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Beef with Mix Vegetables.png" alt="">
+            </div>
+            <div class="item item5 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Roasted Salmon Salad.png" alt="">
+            </div>
+            <div class="item item6 transition-all duration-300">
+                <img class="w-full h-full" src="../../images/gallery/Szechuan Beef.png" alt="">
+            </div>
         </div>
-        <div class="item item2 transition-all duration-300 order-2">
-            <img class="w-full h-full" src="../../images/gallery/Poached Pear Salad.png" alt="">
+    </section> -->
+    <!--====================================
+            IMAGE GALLERY PART END 
+    =====================================-->
+
+    <!--====================================
+               FAQ PART START  
+    =====================================-->
+    <section class="container mb-20">
+        <h2 class="text-[32px] font-semibold mb-12 text-center">Frequently Asked Questions (FAQ)</h2>
+        <div class="flex flex-col gap-4">
+            <div class="border border-[#EFF0F6] py-6 rounded-2xl">
+                <div class="accordionBtn px-6 h-full flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">What types of meals do you offer?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </div>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">Are your ingredients fresh and locally sourced?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">Do you provide vegetarian or vegan options?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">Can I customize my meal plan?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">What is the delivery schedule and service area?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">How do I place an order?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
+            <div class="border border-black/20 rounded-2xl py-6">
+                <button class="accordionBtn px-6 flex justify-between items-center w-full">
+                    <h6 class="text-[22px] font-medium">Are your ingredients fresh and locally sourced?</h6>
+                    <i class="accordion-icon icon-arrow-down text-primary text-2xl transition-all duration-300"></i>
+                </button>
+                <div style="height: 0px;" class="overflow-hidden px-6 transition-all duration-300">
+                    <p>At TiffinKing, we offer a diverse range of meals, including home-style comfort food, corporate catering options, and region-based specialties. Our menu features nutritious and delicious dishes crafted with fresh ingredients, ensuring a perfect balance of taste and health. Whether you need daily meals, event catering, or customized meal plans, we’ve got you covered!</p>
+                </div>
+            </div>
         </div>
-        <div class="item item3 transition-all duration-300 order-3">
-            <img class="w-full h-full" src="../../images/gallery/Beef with Brocolli.png" alt="">
+    </section>
+    <!--====================================
+               FAQ PART END  
+    =====================================-->
+
+    <!--====================================
+           MOBILE NAV PART START  
+    =====================================-->
+    <section class="w-full lg:hidden bottom-0 left-0 z-20 fixed drop-shadow-mobile-nav">
+        <div class="bg-white grid grid-cols-5 justify-items-center h-[56px]">
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-home text-base"></i>
+               <h6 class="text-xs font-normal">Home</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-document text-base"></i>
+                <h6 class="text-xs font-normal">Home</h6>
+            </div>
+            <div class="w-14 h-14 rounded-full bg-primary -mt-5 flex items-center justify-center relative border-8 border-[#f7f7f7]">
+                <i class="icon-cart text-2xl text-white"></i>
+                <div class="absolute top-2 right-3 w-2 h-2 rounded-full bg-[#FFDB1F]"></div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-order text-base"></i>
+                <h6 class="text-xs font-normal">Home</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-profile-circle text-base"></i>
+                <h6 class="text-xs font-normal">Home</h6>
+            </div>
         </div>
-        <div class="item item4 transition-all duration-300 order-4">
-            <img class="w-full h-full" src="../../images/gallery/Beef with Mix Vegetables.png" alt="">
-        </div>
-        <div class="item item5 transition-all duration-300 order-5">
-            <img class="w-full h-full" src="../../images/gallery/Roasted Salmon Salad.png" alt="">
-        </div>
-        <div class="item item6 transition-all duration-300 order-6">
-            <img class="w-full h-full" src="../../images/gallery/Szechuan Beef.png" alt="">
-        </div>
+    </section>
+    <!--====================================
+            MOBILE NAV  PART END  
+    =====================================-->
+
+    <div class="container mb-20">
+        <div class="w-8 h-8 bg-primary/100"></div>
+        <div class="w-8 h-8 bg-primary/10"></div>
+        <div class="w-8 h-8 bg-primary/40"></div>
+        <div class="w-8 h-8 bg-primary/100"></div>
     </div>
+
     <!--====================================
-             FEATURES PART START  
+           FOOTER PART START  
     =====================================-->
-
-
+    <section class="pt-12 bg-primary/100">
+        <div class="container pb-8 flex md:flex-row flex-col items-start justify-between">
+            <div>
+               <a href="#"><img class="mb-6" src="../../images/tiffinking_logo_white.png" alt=""></a>
+               <div class="mb-6">
+                    <p class="text-xs font-normal mb-3 text-white">Subscribe to our newsletter to get latest updates</p>
+                    <form action="" class="h-12 p-2 rounded-lg bg-white flex">
+                        <input type="text" class=" ps-2 outline-none" placeholder="Your email address">
+                        <button class="p-2 rounded-md bg-primary h-8 flex items-center justify-center text-white">Subscribe</button>
+                    </form>
+               </div>
+               <div class="mb-6">
+                    <p class="text-xs font-normal mb-4 text-white">Follow Us on</p>
+                    <div class="flex items-center gap-6">
+                        <img src="../../images/social/facebook.png" alt="">
+                        <img src="../../images/social/Instagram.png" alt="">
+                        <img src="../../images/social/Twitter.png" alt="">
+                        <img src="../../images/social/Youtube.png" alt="">
+                    </div>
+               </div>
+            </div>
+            <div class="text-white">
+                <h2 class="text-lg font-semibold mb-4">Legal</h2>
+                <ul class="[&_li]:text-base [&_li]:font-normal flex flex-col gap-3">
+                    <li><a href="#">Cookie Setting</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contuct Us</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <h2 class="text-lg font-semibold mb-2">Download Our Apps</h2>
+                <div class="flex gap-3 items-center mb-6">
+                    <img src="../../images/footer/appStore.png" alt="">
+                    <img src="../../images/footer/playStore.png" alt="">
+                </div>
+                <div class="flex gap-2 mb-3">
+                    <i class="icon-email-track text-2xl"></i>
+                    <span class="text-lg font-normal">tiffinkinghotline@gmail.com</span>
+                </div>
+                <div class="flex gap-2">
+                    <i class="icon-call-center text-2xl"></i>
+                    <span class="text-lg font-normal">0123659874563</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 border-t border-primary-light/40">
+            <p class="text-sm font-normal leading-6 text-center text-white">&copy; TiffinKing by iNiLabs 2022, All Rights Reserved</p>
+        </div>
+    </section>
+    <!--====================================
+           FOOTER PART END  
+    =====================================-->
 </body>
 </html>
