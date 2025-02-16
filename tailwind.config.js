@@ -4,7 +4,7 @@
   theme: {
     extend: {
       screens:{
-
+        'xs':'450px'
       },
       fontFamily: {
         "client": ["var(--client-font)"],
@@ -16,6 +16,9 @@
     },
     backgroundImage:{
       "herobg": "linear-gradient(180deg, #FFF0F0 0%, #FFF 100%);"
+    },
+    boxShadow:{
+      'header': "0px 6px 32px rgba(0, 0, 0, 0.04)",
     },
     dropShadow: {
       "category": "2px 4px 8px rgba(0, 0, 0, 0.25)",

@@ -8,7 +8,8 @@
         --primary-light : 255 237 238;
         --client-font: 'Rubik', sans-serif;
         --black: 31 31 57;
-    }
+     }
+    p{@apply text-sm font-normal}
     body { @apply font-client scroll-smooth bg-white}
 }
 @layer components{
@@ -29,8 +30,8 @@
     .masonry {
         grid-template-rows: repeat(auto-fit, minmax(0, 5px));
         grid-template-columns: repeat(12,minmax(13px, 1fr));
-        column-gap: 24px;
     }
+    .accordionBtn p{@apply text-sm font-normal leading-6}
     .item1{
         grid-column-start: 1;
         grid-column-end: 5;
@@ -81,5 +82,8 @@
     .item:hover {
         transform: translateY(-10px);
     }
+    .drawer.active{@apply !opacity-100 !visible}
+    .drawer.active > div {@apply !translate-x-0}
+    
 
 }

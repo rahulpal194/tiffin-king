@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1739441334234");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1739441334234") format("woff2"), url("./iconly.woff?1739441334234") format("woff"), url("./iconly.ttf?1739441334234") format("truetype"), url("./iconly.svg?1739441334234#Iconly") format("svg");
+  src: url("./iconly.eot?1739690257461");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1739690257461") format("woff2"), url("./iconly.woff?1739690257461") format("woff"), url("./iconly.ttf?1739690257461") format("truetype"), url("./iconly.svg?1739690257461#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -65,4 +65,8 @@
 
 .icon-youtube:before {
   content: "\e00a";
+}
+
+.icon-close-circle:before {
+  content: "\e00b";
 }
