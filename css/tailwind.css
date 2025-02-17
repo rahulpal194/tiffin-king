@@ -6,6 +6,7 @@
     :root {
         --primary: 207 0 6;
         --primary-light : 255 237 238;
+        --negative : 233 60 60;
         --client-font: 'Rubik', sans-serif;
         --black: 31 31 57;
      }
@@ -13,6 +14,8 @@
     body { @apply font-client scroll-smooth bg-white}
 }
 @layer components{
+
+    /* container content */
     .container { @apply max-w-6xl w-full mx-auto px-4 }
     .row { @apply flex flex-wrap -m-3 }
     .col-1 { @apply w-1/6 p-3 }
@@ -27,63 +30,51 @@
     .col-10 { @apply w-4/5 p-3 }
     .col-11 { @apply w-5/6 p-3 }
     .col-12 { @apply w-full p-3 } 
-    .masonry {
-        grid-template-rows: repeat(auto-fit, minmax(0, 5px));
-        grid-template-columns: repeat(12,minmax(13px, 1fr));
-    }
+
+    /* image gallery start */
+    .image-gallery { @apply grid-rows-[auto-fit_minmax(0,5px)]}
+    .item1{ @apply col-start-1 col-end-5 row-start-1 row-end-8 grid mb-4 md:mb-6}
+    .item2{ @apply col-start-5 col-end-8 row-start-1 row-end-9 grid mb-4 md:mb-6}
+    .item3{ @apply col-start-8 col-end-13 row-start-1 row-end-10 grid mb-4 md:mb-6}
+    .item4{ @apply col-start-1 col-end-5 row-start-8 row-end-[18] grid mb-4 md:mb-6}
+    .item5{ @apply col-start-5 col-end-9 row-start-10 row-end-[17] grid mb-4 md:mb-6}
+    .item6{ @apply col-start-9 col-end-13 row-start-10 row-end-[17] grid mb-4 md:mb-6}
+    .item:hover { @apply transform translate-y-[-10px]}
     .accordionBtn p{@apply text-sm font-normal leading-6}
-    .item1{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end:8;
-        display: grid;
-        margin-bottom: 24px;}
-    .item2{
-        grid-column-start: 5;
-        grid-column-end: 8;
-        grid-row-start: 1;
-        grid-row-end:9;
-        display: grid;
-        margin-bottom: 24px;
-    }
-    .item3{
-        grid-column-start: 8;
-        grid-column-end: 13;
-        grid-row-start: 1;
-        grid-row-end:10;
-        display: grid;
-        margin-bottom: 24px;
-    }
-    .item4{
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 8;
-        grid-row-end:18;
-        display: grid;
-        margin-bottom: 24px;
-    }
-    .item5{
-        grid-column-start: 5;
-        grid-column-end: 9;
-        grid-row-start: 10;
-        grid-row-end:17;
-        display: grid;
-        margin-bottom: 24px;
-    }
-    .item6{
-        grid-column-start: 9;
-        grid-column-end: 13;
-        grid-row-start: 10;
-        grid-row-end:17;
-        display: grid;
-        margin-bottom: 24px;
-    }
-    .item:hover {
-        transform: translateY(-10px);
-    }
+
     .drawer.active{@apply !opacity-100 !visible}
     .drawer.active > div {@apply !translate-x-0}
     
-
+     /* PRODUCT CARD GRID */
+     .product-card-grid { @apply relative flex flex-col rounded-2xl border transition border-[#EFF0F6] bg-white hover:shadow-xl }
+     .product-card-grid-image { @apply w-full rounded-t-2xl }
+     .product-card-grid-badge-group { @apply absolute top-3 left-3 rotate-[-35deg] }
+     .product-card-grid-badge-image { @apply w-12 h-12 }
+     .product-card-grid-badge-text { @apply capitalize text-sm font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white }
+     .product-card-grid-content-group { @apply py-4 px-3 rounded-b-2xl h-full flex flex-col justify-between }
+     .product-card-grid-header-group { @apply flex items-start gap-2 mb-2 }
+     .product-card-grid-title { @apply text-sm font-semibold capitalize text-ellipsis whitespace-nowrap overflow-hidden w-fit max-w-[200px] }
+     .product-card-grid-info-btn { @apply mt-[3px] }
+     .product-card-grid-describe { @apply text-xs text-ellipsis mb-3 }
+     .product-card-grid-footer-group { @apply flex items-center justify-between gap-2 }
+     .product-card-grid-price-group { @apply flex flex-wrap items-center gap-x-2 }
+     .product-card-grid-price-previous { @apply text-sm font-medium }
+     .product-card-grid-price-current { @apply text-lg font-medium }
+     .product-card-grid-cart-btn { @apply flex items-center gap-1.5 rounded-3xl capitalize text-sm font-medium h-6 px-2 shadow-md transition bg-white hover:bg-primary }
+ 
+     /* PRODUCT CARD LIST */
+     .product-card-list { @apply relative flex items-center rounded-lg border transition border-[#EFF0F6] bg-white hover:shadow-xl }
+     .product-card-list-image { @apply flex-shrink-0 w-28 h-full object-cover rounded-l-lg }
+     .product-card-list-badge-group { @apply absolute top-3 left-3 rotate-[-35deg] }
+     .product-card-list-badge-image { @apply w-12 h-12 }
+     .product-card-list-badge-text { @apply capitalize text-sm font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white }
+     .product-card-list-content-group { @apply px-3 py-2.5 rounded-r-lg w-full h-full flex flex-col justify-between }
+     .product-card-list-header-group { @apply flex items-start gap-2 mb-1 }
+     .product-card-list-title { @apply text-sm font-semibold capitalize }
+     .product-card-list-describe { @apply text-[10px] font-normal text-ellipsis mb-2 text-black/60 }
+     .product-card-list-footer-group { @apply flex items-center justify-between gap-2 }
+     .product-card-list-price-group { @apply flex flex-wrap items-center gap-x-2 }
+     .product-card-list-price-previous { @apply text-xs font-medium text-black/60 }
+     .product-card-list-price-current { @apply text-sm font-medium }
+     .product-card-list-cart-btn { @apply flex items-center gap-1.5 rounded-3xl capitalize text-sm font-medium h-6 px-2 shadow-btn transition bg-white hover:bg-primary hover:text-white} 
 }

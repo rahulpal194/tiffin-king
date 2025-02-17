@@ -39,7 +39,7 @@ accordionBtn.forEach((btn) => {
     });
 });
 
-
+//Drawer part start
 const drawerdivs = document.querySelectorAll('.drawer')
 const drawerSets = document?.querySelectorAll("[data-drawer]");
 const closedrawers = document.querySelectorAll('.close-sidebar')
@@ -57,7 +57,6 @@ closedrawers.forEach(closedrawer=>{
         })
     })
 })
-
 document?.addEventListener("click", function(event) {
     const isClickInsideDrawer = event.target.closest('.drawer-content') || event.target.closest('[data-drawer]');    
     if (!isClickInsideDrawer) {
@@ -68,3 +67,6 @@ document?.addEventListener("click", function(event) {
     event.stopPropagation();
     
 });
+
+
+

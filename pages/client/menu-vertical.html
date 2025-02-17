@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../fonts/typography/rubik/Rubik.css">
+    <link rel="stylesheet" href="../../fonts/iconly/iconly.css">
+    <link rel="stylesheet" href="../../lib/swiper/bundle.min.css">
+    <script defer src="../../lib/swiper/bundle.min.js"></script>
+    <script defer src="../../lib/swiper/initialize.js"></script>
+    
+    <script defer src="../../js/script.js"></script>
+    <script defer src="../../js/dropdown.js"></script>
+
+    <title>Menu Horizontal :: Tiffin King</title>
+</head>
+<body>
+    <!--====================================
+                HEADER PART START  
+    =====================================-->
+    <header class="header fixed top-0 bg-transparent left-0 w-full z-20 transition-all duration-150 ease-in-out">
+        <nav class="container flex justify-between items-center py-4 md:py-5">
+            <a href="#"><img src="../../images/tiffinKing_logo.png" alt="logo"></a>
+            <ul class="hidden lg:flex gap-8 items-center text-sm font-medium">
+                <li class="hover:text-primary"><a href="">Home</a></li>
+                <li class="hover:text-primary"><a href="">Menu</a></li>
+                <li class="hover:text-primary"><a href="">About Us</a></li>
+                <li class="hover:text-primary"><a href="">Contact Us</a></li>
+            </ul>
+            <div class="flex gap-3 items-center">
+                <div class="relative dropdown-group group">
+                    <button id="dropdown-btn" class="dropdown-btn flex items-center gap-1 font-normal text-xs border px-2 h-8 rounded-full text-black bg-white"><img class="w-4 h-4 rounded-full" src="../../images/flag/united kingdom.png" alt="flag">English</button>
+                    <ul class="dropdown-list absolute top-9 w-full p-2 bg-white shadow-md rounded-lg scale-y-0 group-hover:scale-y-100 origin-top transition-all duration-300">
+                        <li class="px-2 pb-2">English</li>
+                        <li class="px-2">Bangla</li>
+                    </ul>
+                </div>
+                <button data-drawer="#cart" class="hidden lg:flex items-center gap-1 font-medium text-sm bg-black/100 px-3 h-8 rounded-full text-white"><i class="icon-cart text-lg"></i>$0.00</button>
+                <button data-drawer="#profile" class="hidden lg:flex items-center gap-1 font-medium text-sm bg-primary px-3 h-8 rounded-full text-white"><i class="icon-profile-circle"></i>Log In</button>
+            </div>
+        </nav>
+    </header>
+    <!--====================================
+                HEADER PART START  
+    =====================================-->
+
+    <!--====================================
+           SIDEBAR CART PART START  
+    =====================================-->
+    <aside id="cart" class="drawer w-full h-screen bg-black/40 fixed left-0 top-0 z-20 invisible opacity-0 transition-all duration-300 ease-in-out">
+        <div class="max-w-md w-full h-screen z-30 bg-white right-0 absolute translate-x-full transition-all drawer-content">
+            <div class="flex justify-between">
+                <h1>hello cart Sidebar</h1>
+                <i class="icon-close-circle text-xl close-sidebar cursor-pointer"></i>
+            </div>
+        </div>
+    </aside>
+    <!--====================================
+           SIDEBAR CART PART START  
+    =====================================-->
+
+    <!--====================================
+           SIDEBAR PROFILE PART START  
+    =====================================-->
+    <aside id="profile" class="drawer w-full h-screen bg-black/40 fixed left-0 top-0 z-20 invisible opacity-0 transition-all duration-300 ease-in-out">
+        <div class="max-w-md w-full h-screen z-30 bg-white right-0 absolute translate-x-full transition-all drawer-content">
+            <div class="flex justify-between">
+                <h1>hello profile Sidebar</h1>
+                <i class="icon-close-circle text-xl close-sidebar cursor-pointer"></i>
+            </div>
+        </div>
+    </aside>
+    <!--====================================
+           SIDEBAR PROFILE PART START  
+    =====================================-->
+
+    <!--====================================
+            CATEGORY PART START  
+    =====================================-->
+    <section class="container">
+        <div class="pt-24 sm:pt-28 mb-12">
+            <div class="swiper meal-swiper">
+                <div class="swiper-wrapper">
+                    <button type="button" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-6 rounded-2xl sm:rounded-[32px] group hover:bg-primary-light bg-transparent border-b-4 border-transparent hover:border-b-primary">
+                        <img class="h-9 sm:h-[72px] drop-shadow-category" src="../../images/category/breakfast.png" alt="category">
+                        <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Breakfast</h3>
+                    </button>
+                    <button type="button" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-6 rounded-2xl sm:rounded-[32px] group hover:bg-primary-light bg-transparent border-b-4 border-transparent hover:border-b-primary">
+                        <img class="h-9 sm:h-[72px] drop-shadow-category" src="../../images/category/brunch.png" alt="category">
+                        <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Brunch</h3>
+                    </button>
+                    <button type="button" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-6 rounded-2xl sm:rounded-[32px] group hover:bg-primary-light bg-transparent border-b-4 border-transparent hover:border-b-primary">
+                        <img class="h-9 sm:h-[72px] drop-shadow-category" src="../../images/category/lunch.png" alt="category">
+                        <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Lunch</h3>
+                    </button>
+                    <button type="button" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-6 rounded-2xl sm:rounded-[32px] group hover:bg-primary-light bg-transparent border-b-4 border-transparent hover:border-b-primary">
+                        <img class="h-9 sm:h-[72px] drop-shadow-category" src="../../images/category/snacks.png" alt="category">
+                        <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Snacks</h3>
+                    </button>
+                    <button type="button" class="swiper-slide w-full !flex flex-col items-center text-center gap-y-3 sm:gap-y-6 p-3 sm:p-6 pb-2 sm:pb-6 rounded-2xl sm:rounded-[32px] group hover:bg-primary-light bg-transparent border-b-4 border-transparent hover:border-b-primary">
+                        <img class="h-9 sm:h-[72px] drop-shadow-category" src="../../images/category/dinner.png" alt="category">
+                        <h3 class="text-sm sm:text-[22px] font-semibold group-hover:text-primary leading-6">Dinner</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+            CATEGORY PART END  
+    =====================================-->
+
+    <!--====================================
+            MENU PART START  
+    =====================================-->
+    <section class="container">
+        <nav class="flex flex-wrap gap-3 w-full mb-12 veg-navs">
+            <button type="button" class="flex items-center gap-3 w-fit pl-3 pr-4 py-1.5 rounded-3xl transition hover:shadow-btn hover:bg-white bg-[#EFF0F6]">
+                <img src="../../images/category/non_veg.png" alt="category" class="h-6">
+                <span class="capitalize text-sm font-medium text-heading">Non-Veg</span>
+                <i class="icon-line-close-circle text-xl text-red-500 transition opacity-0 ltr:-ml-8 rtl:-mr-8"></i>
+            </button>
+            <button type="button" class="flex items-center gap-3 w-fit pl-3 pr-4 py-1.5 rounded-3xl transition hover:shadow-btn hover:bg-white bg-[#EFF0F6]">
+                <img src="../../images/category/veg.png" alt="category" class="h-6">
+                <span class="capitalize text-sm font-medium text-heading">Veg</span>
+                <i class="icon-line-close-circle text-xl text-red-500 transition opacity-0 ltr:-ml-8 rtl:-mr-8"></i>
+            </button>
+        </nav>
+        <div class="flex gap-4 items-center justify-between mb-6">
+            <h2 class="capitalize text-[32px] leading-[40px] font-semibold text-center sm:text-left text-primary">Brunch</h2>
+            <nav class="flex items-center gap-4 dimension-navs">
+                <a href="../../pages/client/menu-horizontal.html" title="Horizontal" class="icon-vertical text-2xl text-[#A0A3BD] "></a>
+                <a href="../../pages/client/menu-vertical.html" title="Vertical" class="icon-horizontal text-2xl text-primary"></a>
+            </nav>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 lg:gap-6 mb-20">
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/01.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/02.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/03.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/04.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/05.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/06.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/07.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/08.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/10.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-grid">
+                <img class="product-card-grid-image" src="../../images/product/09.png" alt="product">
+                <div class="product-card-grid-badge-group">
+                    <img class="product-card-grid-badge-image" src="../../images/badge.png" alt="badge">
+                    <span class="product-card-grid-badge-text">new</span>
+                </div>
+                <div class="product-card-grid-content-group">
+                    <div class="product-card-grid-header-group">
+                        <h3 class="product-card-grid-title">Creamy Cheese Burger</h3>
+                        <button class="product-card-grid-info-btn info-btn" type="button" data-modal="#info">
+                            <svg class="fill-paragraph transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.66668 4.99998H6.33334V3.66665H7.66668M7.66668 10.3333H6.33334V6.33331H7.66668M7.00001 0.333313C6.12453 0.333313 5.25762 0.505751 4.44879 0.840783C3.63995 1.17581 2.90502 1.66688 2.28596 2.28593C1.03572 3.53618 0.333344 5.23187 0.333344 6.99998C0.333344 8.76809 1.03572 10.4638 2.28596 11.714C2.90502 12.3331 3.63995 12.8241 4.44879 13.1592C5.25762 13.4942 6.12453 13.6666 7.00001 13.6666C8.76812 13.6666 10.4638 12.9643 11.7141 11.714C12.9643 10.4638 13.6667 8.76809 13.6667 6.99998C13.6667 6.1245 13.4942 5.25759 13.1592 4.44876C12.8242 3.63992 12.3331 2.90499 11.7141 2.28593C11.095 1.66688 10.3601 1.17581 9.55123 0.840783C8.7424 0.505751 7.87549 0.333313 7.00001 0.333313Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="product-card-grid-describe char-limit">Our CHICK and CRISP™ is loaded choppe dlettuce layer with creamy cheese</p>
+                    <div class="product-card-grid-footer-group">
+                        <div class="product-card-grid-price-group">
+                            <del class="product-card-grid-price-previous">$4.20</del>
+                            <h4 class="product-card-grid-price-current">$5.60</h4>
+                        </div>
+                        <button class="product-card-grid-cart-btn add-btn" data-modal="#variation" >
+                            <svg class="fill-primary transition" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6433 5.22665C11.2525 4.79498 10.6633 4.54415 9.84668 4.45665V4.01332C9.84668 3.21415 9.50835 2.44415 8.91335 1.90748C8.31251 1.35915 7.53085 1.10248 6.72001 1.17832C5.32585 1.31248 4.15335 2.65998 4.15335 4.11832V4.45665C3.33668 4.54415 2.74751 4.79498 2.35668 5.22665C1.79085 5.85665 1.80835 6.69665 1.87251 7.27998L2.28085 10.5292C2.40335 11.6666 2.86418 12.8333 5.37251 12.8333H8.62751C11.1358 12.8333 11.5967 11.6666 11.7192 10.535L12.1275 7.27415C12.1917 6.69665 12.2033 5.85665 11.6433 5.22665ZM6.80168 1.98915C7.38501 1.93665 7.93918 2.11748 8.37085 2.50832C8.79668 2.89332 9.03585 3.44165 9.03585 4.01332V4.42165H4.96418V4.11832C4.96418 3.07998 5.82168 2.08248 6.80168 1.98915ZM4.91168 7.67082H4.90585C4.58501 7.67082 4.32251 7.40832 4.32251 7.08748C4.32251 6.76665 4.58501 6.50415 4.90585 6.50415C5.23251 6.50415 5.49501 6.76665 5.49501 7.08748C5.49501 7.40832 5.23251 7.67082 4.91168 7.67082ZM8.99501 7.67082H8.98918C8.66835 7.67082 8.40585 7.40832 8.40585 7.08748C8.40585 6.76665 8.66835 6.50415 8.98918 6.50415C9.31585 6.50415 9.57835 6.76665 9.57835 7.08748C9.57835 7.40832 9.31585 7.67082 8.99501 7.67082Z"/>
+                            </svg> 
+                            <span class="text-xs text-primary transition">add</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+            MENU PART END  
+    =====================================-->
+
+    <!--====================================
+           MOBILE NAV PART START  
+    =====================================-->
+    <section class="w-full lg:hidden bottom-0 left-0 z-20 fixed drop-shadow-mobile-nav">
+        <div class="bg-white grid grid-cols-5 justify-items-center h-[56px]">
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-home text-base"></i>
+               <h6 class="text-xs font-normal">Home</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-document text-base"></i>
+                <h6 class="text-xs font-normal">Menu</h6>
+            </div>
+            <div class="w-12 h-12 rounded-full bg-primary -mt-5 flex items-center justify-center relative shadow-mobile-cartBtn">
+                <i class="icon-cart text-2xl text-white"></i>
+                <div class="absolute top-2 right-1.5 w-2 h-2 rounded-full bg-[#FFDB1F]"></div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-order text-base"></i>
+                <h6 class="text-xs font-normal">My Orders</h6>
+            </div>
+            <div class="flex flex-col items-center justify-center text-[#6E7191]">
+                <i class="icon-profile-circle text-base"></i>
+                <h6 class="text-xs font-normal">Profile</h6>
+            </div>
+        </div>
+    </section>
+    <!--====================================
+            MOBILE NAV  PART END  
+    =====================================-->
+
+    <!--====================================
+           FOOTER PART START  
+    =====================================-->
+    <section class="pt-8 sm:pt-12 bg-primary/100 lg:mb-0 mb-14">
+        <div class="container mb-4 sm:pb-8 flex md:flex-row flex-col items-start justify-between gap-6">
+            <div>
+               <a href="#"><img class="mb-6" src="../../images/tiffinking_logo_white.png" alt=""></a>
+               <div class="mb-6">
+                    <p class="text-xs font-normal mb-3 text-white">Subscribe to our newsletter to get latest updates</p>
+                    <form action="" class="h-12 p-2 rounded-lg bg-white flex">
+                        <input type="text" class=" ps-2 outline-none" placeholder="Your email address">
+                        <button class="p-2 rounded-md bg-primary h-8 flex items-center justify-center text-white">Subscribe</button>
+                    </form>
+               </div>
+               <div class="mb-6">
+                    <p class="text-xs font-normal mb-4 text-white">Follow Us on</p>
+                    <div class="flex items-center gap-6">
+                        <img src="../../images/social/facebook.png" alt="">
+                        <img src="../../images/social/Instagram.png" alt="">
+                        <img src="../../images/social/Twitter.png" alt="">
+                        <img src="../../images/social/Youtube.png" alt="">
+                    </div>
+               </div>
+            </div>
+            <div class="text-white">
+                <h2 class="text-lg font-semibold mb-4">Legal</h2>
+                <ul class="[&_li]:text-base [&_li]:font-normal flex flex-col gap-3">
+                    <li><a href="#">Cookie Setting</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contuct Us</a></li>
+                </ul>
+            </div>
+            <div class="text-white">
+                <h2 class="text-lg font-semibold mb-2">Download Our Apps</h2>
+                <div class="flex gap-3 items-center mb-6">
+                    <img src="../../images/footer/appStore.png" alt="">
+                    <img src="../../images/footer/playStore.png" alt="">
+                </div>
+                <div class="flex gap-2 mb-3">
+                    <i class="icon-email-track text-2xl"></i>
+                    <span class="text-lg font-normal">tiffinkinghotline@gmail.com</span>
+                </div>
+                <div class="flex gap-2">
+                    <i class="icon-call-center text-2xl"></i>
+                    <span class="text-lg font-normal">0123659874563</span>
+                </div>
+            </div>
+        </div>
+        <div class="p-4 lg:p-6 border-t border-primary-light/40">
+            <p class="text-sm font-normal leading-6 text-center text-white">&copy; TiffinKing by iNiLabs 2022, All Rights Reserved</p>
+        </div>
+    </section>
+    <!--====================================
+           FOOTER PART END  
+    =====================================-->
+</body>
+</html>
